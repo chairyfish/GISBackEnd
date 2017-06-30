@@ -9,10 +9,10 @@
        http://www.springframework.org/schema/context/spring-context.xsd">
 
     <!-- 激活spring的注解. -->
-    <context:annotation-config />
+    <context:annotation-config/>
 
     <!-- 把标记了@Controller注解的类转换为bean -->
-    <context:component-scan base-package="Controller" />
+    <context:component-scan base-package="Controller"/>
 
     <bean class="org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter"/>
 
@@ -21,12 +21,7 @@
     <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter"/>
 
     <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-        <property name="prefix" value="/WEB-INF/" />
-        <property name="suffix" value=".jsp" />
+        <property name="prefix" value="/WEB-INF/"/>
+        <property name="suffix" value=".jsp"/>
     </bean>
-
-
-
-
-
 </beans>
